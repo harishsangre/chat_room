@@ -21,7 +21,7 @@ exports.login = async (req, res, next) => {
     next(error);
   }
 };
- 
+
 exports.logout = async (req, res) => {
   const token = req.cookies.token;
   await authService.logout(token);
